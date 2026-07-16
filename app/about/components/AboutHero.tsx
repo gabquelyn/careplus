@@ -1,10 +1,9 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { motion, useReducedMotion } from "motion/react";
+import { motion } from "motion/react";
 
 export default function AboutHero() {
-  const reduceMotion = useReducedMotion() ?? false;
 
   return (
     <section className="relative overflow-hidden bg-white py-20 font-sans text-charcoal lg:py-28">
@@ -35,7 +34,7 @@ export default function AboutHero() {
 
           {/* Right Column: Empathy Image */}
           <motion.div 
-            initial={reduceMotion ? {} : { opacity: 0, scale: 0.95 }}
+            initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="relative h-87.5 w-full overflow-hidden rounded-2xl border border-teal/5 shadow-2xl shadow-charcoal/10 sm:h-[450px] lg:col-span-5"
