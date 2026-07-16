@@ -208,36 +208,36 @@ export default function Header() {
             )}
           </div>
 
-          <a
-            href="#about"
+          <Link
+            href="/about"
             className="block rounded-lg px-3 py-2 text-base font-semibold hover:bg-soft-teal hover:text-teal transition-colors"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             About Us
-          </a>
-          <a
-            href="#careers"
+          </Link>
+          <Link
+            href="/care-journey"
             className="block rounded-lg px-3 py-2 text-base font-semibold hover:bg-soft-teal hover:text-teal transition-colors"
             onClick={() => setIsMobileMenuOpen(false)}
           >
-            Careers
-          </a>
-          <a
-            href="#resources"
+            Care Journey
+          </Link>
+          <Link
+            href="/resources"
             className="block rounded-lg px-3 py-2 text-base font-semibold hover:bg-soft-teal hover:text-teal transition-colors"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Resources
-          </a>
+          </Link>
 
           <div className="pt-4 border-t border-charcoal/5">
-            <a
-              href="#contact"
+            <Link
+              href="/contact"
               className="block w-full text-center rounded-lg bg-coral px-4 py-3 text-base font-semibold text-off-white shadow-md shadow-coral/10 hover:bg-coral/95 transition-all"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Get In Touch
-            </a>
+            </Link>
           </div>
         </div>
       )}
